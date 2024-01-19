@@ -1,2 +1,2 @@
 # gpmdpr_snowfall
-Code to generate satellite snowfall estimates from GPM-DPR
+This GitHub page has a series of R codes to generate satellite snowfall estimates from the GPM-DPR satellite radar platform. The code MRR_Parsivel_Gauge_Meteo_Processing.R processes surface observations. The code Parsivel_Classification_Matrix.R contains a particle type classification matrix. The code MRR_GPM_Matching.R matches surface and satellite observations. The code GPM_DPR_Processing.R processes GPM-DPR radar observations. The code CORRA_5km_Processing.R processes CORRA precipitation estimates. Finally, the code Snowfall_SpatialEstimates.R generates snowfall spatial estimates with the newly developed algorithm.
