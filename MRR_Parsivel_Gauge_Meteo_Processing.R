@@ -70,7 +70,7 @@ for (j in 1:length(parsivel_list)) {
     
     parsivel_time[j] <- as.POSIXct(paste0(parsivel$V1, " ", parsivel$V2), format = "%d.%m.%Y %H:%M:%S", tz = "CST")
     
-    matrix_d_v <- matrix(as.numeric(parsivel[,18:1041]), ncol = 32, nrow = 32) #Parsivel matrix (rows = diameters; cols = velocities)
+    matrix_d_v <- matrix(c(as.numeric(gsub('<SPECTRUM>', '', parsivel[,17])), as.numeric(parsivel[,18:1040])), ncol = 32, nrow = 32) #Parsivel matrix (rows = diameters; cols = velocities)
     
     
     sample_area <- (54*(1-(matrix_d/(2*30))))*0.0001 #Parsivel sample area varies with diameter
